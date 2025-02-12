@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import random
 import json
+import os
 
 class WalmartStockMonitor:
     def __init__(self, product_url, webhook_url, check_interval=300):

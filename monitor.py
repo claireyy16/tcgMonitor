@@ -156,7 +156,7 @@ if __name__ == "__main__":
         exit(1)
     
     # Create monitor instance (check every 5 minutes)
-    monitor = WalmartStockMonitor(product_url, webhook_url, check_interval=300)
+    monitor = WalmartStockMonitor(product_url, webhook_url, check_interval=3600) #used to be 300 for 5 minutes
     
     # Start monitoring
     monitor.start_monitoring()
